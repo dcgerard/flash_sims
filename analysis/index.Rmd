@@ -6,4 +6,14 @@ title: "Home"
 
 **Code version:** `r system("git log -1 --format='%H'", intern = TRUE)`
 
+## Implementation Checks.
 
+* [In matrix case, homoscedastic tflash gives same results as flash. Looks fine in tensor case.](check_tflash.pdf)
+* [In matriix case, greedy algorithm of tflash same as in flash. Looks fine in tensor case.](check_greedy_tflash.pdf)
+* [Backfitting tflash gives reasonable results.](check_backfitting.pdf)
+* [Kronecker structured variance gives reasonable estimates, indicating implementation is correct.](check_kronecker.pdf)
+
+## Early simulations to see if I get reasonable answers.
+
+* [All null Kronecker structured variance setting. FLASH works pretty well setting components to zero and estimating variances. Does better as dimension increases.](all_null.pdf)
+* [Updating the missing data during each variational update is better than just inserting zeros.](missing_data.pdf)

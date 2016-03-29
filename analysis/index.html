@@ -104,7 +104,7 @@ img {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">succotash_sims</a>
+      <a class="navbar-brand" href="index.html">flash_sims</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -119,9 +119,31 @@ img {
 <h1 class="title">Home</h1>
 </div>
 
+<div id="TOC">
+<ul>
+<li><a href="#implementation-checks.">Implementation Checks.</a></li>
+<li><a href="#early-simulations-to-see-if-i-get-reasonable-answers.">Early simulations to see if I get reasonable answers.</a></li>
+</ul>
+</div>
 
 <p><strong>Last updated:</strong> 2016-03-29</p>
-<p><strong>Code version:</strong> 30fa9047fb0f553740f4802d4113a276deda9ef4</p>
+<p><strong>Code version:</strong> 87f8e7a279997488116f4ea4d661f25bf8a4b471</p>
+<div id="implementation-checks." class="section level2">
+<h2>Implementation Checks.</h2>
+<ul>
+<li><a href="check_tflash.pdf">In matrix case, homoscedastic tflash gives same results as flash. Looks fine in tensor case.</a></li>
+<li><a href="check_greedy_tflash.pdf">In matriix case, greedy algorithm of tflash same as in flash. Looks fine in tensor case.</a></li>
+<li><a href="check_backfitting.pdf">Backfitting tflash gives reasonable results.</a></li>
+<li><a href="check_kronecker.pdf">Kronecker structured variance gives reasonable estimates, indicating implementation is correct.</a></li>
+</ul>
+</div>
+<div id="early-simulations-to-see-if-i-get-reasonable-answers." class="section level2">
+<h2>Early simulations to see if I get reasonable answers.</h2>
+<ul>
+<li><a href="all_null.pdf">All null Kronecker structured variance setting. FLASH works pretty well setting components to zero and estimating variances. Does better as dimension increases.</a></li>
+<li><a href="missing_data.pdf">Updating the missing data during each variational update is better than just inserting zeros.</a></li>
+</ul>
+</div>
 
 
 <!-- some extra javascript for older browsers -->
