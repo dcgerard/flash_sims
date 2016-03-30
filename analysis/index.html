@@ -126,8 +126,8 @@ img {
 </ul>
 </div>
 
-<p><strong>Last updated:</strong> 2016-03-29</p>
-<p><strong>Code version:</strong> 87f8e7a279997488116f4ea4d661f25bf8a4b471</p>
+<p><strong>Last updated:</strong> 2016-03-30</p>
+<p><strong>Code version:</strong> 525af34449569c37b194ba652534445eb0105d0f</p>
 <div id="implementation-checks." class="section level2">
 <h2>Implementation Checks.</h2>
 <ul>
@@ -135,6 +135,7 @@ img {
 <li><a href="check_greedy_tflash.pdf">In matriix case, greedy algorithm of tflash same as in flash. Looks fine in tensor case.</a></li>
 <li><a href="check_backfitting.pdf">Backfitting tflash gives reasonable results.</a></li>
 <li><a href="check_kronecker.pdf">Kronecker structured variance gives reasonable estimates, indicating implementation is correct.</a></li>
+<li><a href="speed_comparison.html">flash runs about twice as fast as tflash.</a></li>
 </ul>
 </div>
 <div id="early-simulations-to-see-if-i-get-reasonable-answers." class="section level2">
@@ -142,6 +143,7 @@ img {
 <ul>
 <li><a href="all_null.pdf">All null Kronecker structured variance setting. FLASH works pretty well setting components to zero and estimating variances. Does better as dimension increases.</a></li>
 <li><a href="missing_data.pdf">Updating the missing data during each variational update is better than just inserting zeros.</a></li>
+<li><a href="another_missing_example.html">Another missing example where imputing zeros is very bad.</a></li>
 </ul>
 </div>
 
