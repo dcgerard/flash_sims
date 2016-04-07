@@ -14,6 +14,7 @@ title: "Home"
 * [Kronecker structured variance gives reasonable estimates, indicating implementation is correct.](check_kronecker.pdf)
 * [flash runs about twice as fast as tflash.](speed_comparison.html)
 * [Justification for using first singular vectors as starting values.](starting_value_influence.html) Even when starting in random directions, posterior estimates only ever end up at near the first singular vectors or all shrunk to zero.
+* [The posterior mean estimates and the empirical singular vectors are super close to each other.](starting_value_sim.html)
 
 ## Early simulations to see if I get reasonable answers.
 
