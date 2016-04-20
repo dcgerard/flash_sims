@@ -15,6 +15,7 @@ title: "Home"
 * [flash runs about twice as fast as tflash.](speed_comparison.html)
 * [Justification for using first singular vectors as starting values.](starting_value_influence.html) Even when starting in random directions, posterior estimates only ever end up at near the first singular vectors or all shrunk to zero.
 * [The posterior mean estimates and the empirical singular vectors are super close to each other.](starting_value_sim.html)
+* [The known factor case is coded up correctly.](check_known_factors.pdf)
 
 ## Early simulations to see if I get reasonable answers.
 

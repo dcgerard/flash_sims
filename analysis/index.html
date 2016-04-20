@@ -10,14 +10,15 @@
 
 
 
+
 <title>Home</title>
 
-<script src="libs/jquery-1.11.0/jquery.min.js"></script>
+<script src="libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="libs/bootstrap-3.3.1/css/united.min.css" rel="stylesheet" />
-<script src="libs/bootstrap-3.3.1/js/bootstrap.min.js"></script>
-<script src="libs/bootstrap-3.3.1/shim/html5shiv.min.js"></script>
-<script src="libs/bootstrap-3.3.1/shim/respond.min.js"></script>
+<link href="libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 
 <style type="text/css">
 
@@ -74,6 +75,31 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 
 
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+</style>
+
+
 </head>
 
 <body>
@@ -88,12 +114,34 @@ code {
   color: inherit;
   background-color: rgba(0, 0, 0, 0.04);
 }
-img { 
-  max-width:100%; 
-  height: auto; 
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
 }
 </style>
+
+
 <div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script src="libs/navigation-1.0/tabsets.js"></script>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
 
 
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -115,8 +163,12 @@ img {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div id="header">
-<h1 class="title">Home</h1>
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Home</h1>
+
 </div>
 
 <div id="TOC">
@@ -127,8 +179,8 @@ img {
 </ul>
 </div>
 
-<p><strong>Last updated:</strong> 2016-04-07</p>
-<p><strong>Code version:</strong> 7d4563f98049a516d96177606b6ce171051452bf</p>
+<p><strong>Last updated:</strong> 2016-04-20</p>
+<p><strong>Code version:</strong> 00850c57eb3b59f4733cb623318be1cda8164659</p>
 <div id="implementation-checks." class="section level2">
 <h2>Implementation Checks.</h2>
 <ul>
@@ -139,6 +191,7 @@ img {
 <li><a href="speed_comparison.html">flash runs about twice as fast as tflash.</a></li>
 <li><a href="starting_value_influence.html">Justification for using first singular vectors as starting values.</a> Even when starting in random directions, posterior estimates only ever end up at near the first singular vectors or all shrunk to zero.</li>
 <li><a href="starting_value_sim.html">The posterior mean estimates and the empirical singular vectors are super close to each other.</a></li>
+<li><a href="check_known_factors.pdf">The known factor case is coded up correctly.</a></li>
 </ul>
 </div>
 <div id="early-simulations-to-see-if-i-get-reasonable-answers." class="section level2">
@@ -182,6 +235,8 @@ $(document).ready(function () {
 });
 
 </script>
+
+
 
 </div>
 
