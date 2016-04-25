@@ -24,5 +24,9 @@ title: "Home"
 * [Another missing example where imputing zeros is very bad.](another_missing_example.html)
 * [T-FLASH performs better than the least-squares estimator and an estimator of the Hoff](early_comparisons.pdf)
 
+## As a Confounder Adjustment Method
+
+* [Conservative when estimating $\pi_0$, but AUC not as good as SUCCOTASH and CATE + ASH](flashr_v_succ.pdf)
+
 ## Factor Analyses
 * [My first attempt at fitting T-FLASH to the GTEX data.](first_analysis.html) I think I need to fix my language. E.g. I am really lax about the definitions of factors and components and loading on something. Overall, I found some interpretable components.
